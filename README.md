@@ -1,73 +1,92 @@
-# Welcome to your Lovable project
+Vibe-Commerce
 
-## Project info
+A modern ecommerce web application built with cutting-edge front-end and back-end technologies, designed for smooth user experience, real-time functionality and scalable architecture.
 
-**URL**: https://lovable.dev/projects/7107c0fa-7fb8-42d1-a9d5-f0c7e58ac763
+🧩 Features
 
-## How can I edit this code?
+User authentication with email/password and social login (Google / Facebook)
 
-There are several ways of editing your application.
+Real-time updates (e.g., product listing, stock changes, order status)
 
-**Use Lovable**
+Product catalogue with filtering, sorting, pagination
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/7107c0fa-7fb8-42d1-a9d5-f0c7e58ac763) and start prompting.
+Shopping cart & checkout flow
 
-Changes made via Lovable will be committed automatically to this repo.
+Payment gateway integration (or placeholder implementation)
 
-**Use your preferred IDE**
+Admin dashboard: product management, order tracking, user management
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+Responsive design: works across desktop, tablet, and mobile
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+Secure and performant: follows best practices for data protection and performance
 
-Follow these steps:
+🛠️ Tech Stack
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+Front-end: React with TypeScript
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+Styling: Tailwind CSS (custom components, minimal external UI frameworks)
 
-# Step 3: Install the necessary dependencies.
-npm i
+Back-end: Node.js with Express (or whichever you’re using)
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+Database: PostgreSQL / MySQL (or whichever relational DB)
+
+Real-time: Socket.IO or WebSockets
+
+Deployment: Vercel / Heroku / DigitalOcean (or your preferred platform)
+
+Version control: Git & GitHub
+
+📁 Project Structure
+/public                  # Static assets (images, icons, etc.)
+/src
+   /components           # Reusable UI components
+   /pages                # Route-based pages (home, products, cart, profile, admin, etc.)
+   /hooks                # Custom React hooks
+   /contexts             # React contexts for state management
+   /services             # API service modules
+   /utils                # Utility functions, constants
+   App.tsx               # Entry point of React application
+   index.tsx             # DOM root render
+/.env                    # Environment variables
+/package.json            # Project dependencies & scripts
+/tsconfig.json           # TypeScript configuration
+
+🚀 Setup & Running Locally
+
+Follow these steps to get the project running on your local machine:
+
+Clone the repository
+
+git clone https://github.com/Lakshit68/Vibe-Commerce.git
+cd Vibe-Commerce
+
+
+Install dependencies
+
+npm install
+
+
+Create a .env file in the root directory and add required environment variables (for example):
+
+REACT_APP_API_URL=http://localhost:5000
+DATABASE_URL=your_database_connection_string
+JWT_SECRET=your_jwt_secret
+
+
+Start the development server
+
 npm run dev
-```
 
-**Edit a file directly in GitHub**
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+Open your browser and go to http://localhost:3000 (or whichever port is configured).
 
-**Use GitHub Codespaces**
+✅ Deployment
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+Build the production bundle
 
-## What technologies are used for this project?
+npm run build
 
-This project is built with:
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+Deploy to your chosen hosting platform (Vercel, Netlify, Heroku, etc.). Ensure your environment variables are set in the hosting dashboard.
 
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/7107c0fa-7fb8-42d1-a9d5-f0c7e58ac763) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+(Optional) Set up a custom domain and SSL certificate for secure access.
