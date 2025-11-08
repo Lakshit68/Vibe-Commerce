@@ -2,7 +2,7 @@ Vibe-Commerce
 
 A modern ecommerce web application built with cutting-edge front-end and back-end technologies, designed for smooth user experience, real-time functionality and scalable architecture.
 
-🧩 Features
+ Features:-
 
 User authentication with email/password and social login (Google / Facebook)
 
@@ -20,7 +20,7 @@ Responsive design: works across desktop, tablet, and mobile
 
 Secure and performant: follows best practices for data protection and performance
 
-🛠️ Tech Stack
+ Tech Stack:-
 
 Front-end: React with TypeScript
 
@@ -36,7 +36,7 @@ Deployment: Vercel / Heroku / DigitalOcean (or your preferred platform)
 
 Version control: Git & GitHub
 
-📁 Project Structure
+ Project Structure:-
 /public                  # Static assets (images, icons, etc.)
 /src
    /components           # Reusable UI components
@@ -51,7 +51,7 @@ Version control: Git & GitHub
 /package.json            # Project dependencies & scripts
 /tsconfig.json           # TypeScript configuration
 
-🚀 Setup & Running Locally
+Setup & Running Locally:-
 
 Follow these steps to get the project running on your local machine:
 
@@ -80,7 +80,7 @@ npm run dev
 
 Open your browser and go to http://localhost:3000 (or whichever port is configured).
 
-✅ Deployment
+ Deployment
 
 Build the production bundle
 
